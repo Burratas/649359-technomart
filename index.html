@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,11 +6,12 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="img/logo-header.jpg" width="220px" height="51px" alt="" class="logo-header">
+      <img src="img/logo-header.jpg" width="220px" height="51px" alt="Логотип Техномарт" class="logo-header">
       <form>
-        <input type="search" placeholder="Поиск">
+        <label for="search-input"></label>
+        <input type="search" id="search-input" placeholder="Поиск">
       </form>
-    
+
         <a href="saves.html">
           Закладки
         </a>
@@ -32,17 +33,17 @@
       </a>
 
       <address>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="main-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
 
       <ul class="user-navigation">
          <li class="login-link"><a href="#">Войти</a></li>
          <li class="login-link"><a href="#">Регистрация</a></li>
       </ul>
-   
+
 
       <nav class="site-navigation-header">
-        <ul class="site-navigation">    
+        <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -76,20 +77,22 @@
           </div>
 
           <div class="slider">
+            <button type="button" class="arrow-preview" aria-label="Предыдущий слайд"></button>
+            <button type="button" class="arrow-next" aria-label="Следующий слайд"></button>
               <div class="slide">
                 <img src="#" width="500" height="250" alt="Слайдер 1">
                 <h3 class="slider-caption">Перфораторы</h3>
                 <p class="slider-text">Настоящие мужские игрушки</p>
                 <a href="#" class="button">Открыть каталог</a>
               </div>
-    
+
               <div class="slide">
                 <img src="#" width="500" height="250" alt="Слайдер 2">
                 <h3 class="slider-caption">Слайдер 2</h3>
                 <p class="slider-text">Текст</p>
                 <a href="#" class="button">Открыть каталог</a>
               </div>
-    
+
               <div class="slide">
                 <img src="img/banner-1.jpg" width="620px" height="266px" alt="Слайдер 3">
                 <h3 class="slider-caption">Слайдер 3</h3>
@@ -98,7 +101,7 @@
               </div>
           </div>
       </section>
-      
+
       <section class="items">
         <h2 class="subtitle">Популярные товары</h2>
           <a href="#" class="button">Все популярные товары</a>
@@ -114,14 +117,14 @@
         <h2 class="subtitle">Популярные производители</h2>
         <a href="#" class="button">Все производители</a>
           <ul class="brands-list">
-            <li><a href="#"><img src="img/bosch.png" width="126" height="37" alt="Bosch"></a></li>
-            <li><a href="#"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a></li>
-            <li><a href="#"><img src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></a></li>
-            <li><a href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a></li>
-            <li><a href="#"><img src="img/LG.png" width="121" height="73" alt="LG"></a></li>
-            <li><a href="#"><img src="img/aeg.png" width="151" height="96" alt="AEG"></a></li>
-            <li><a href="#"><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a></li>
-            <li><a href="#"><img src="img/Интерскол.png" width="200" height="88" alt="Интерскол"></a></li>
+            <li><a href="#"><img src="img/bosch.png" width="126" height="37" alt="Карточка бренда Bosch"></a></li>
+            <li><a href="#"><img src="img/Makita.png" width="123" height="40" alt="Карточка бренда Makita"></a></li>
+            <li><a href="#"><img src="img/DeWALT.png" width="146" height="44" alt="Карточка бренда DeWalt"></a></li>
+            <li><a href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Карточка бренда Hitachi"></a></li>
+            <li><a href="#"><img src="img/LG.png" width="121" height="73" alt="Карточка бренда LG"></a></li>
+            <li><a href="#"><img src="img/aeg.png" width="151" height="96" alt="Карточка бренда AEG"></a></li>
+            <li><a href="#"><img src="img/Metabo.png" width="204" height="69" alt="Карточка бренда Metabo"></a></li>
+            <li><a href="#"><img src="img/Интерскол.png" width="200" height="88" alt="Карточка бренда Интерскол"></a></li>
           </ul>
       </section>
 
@@ -130,20 +133,20 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </section>
-    
-      <section class="service">
+
+      <section class="services">
         <ul>
           <li>Доставка
-            <h3 class="h3-big">Доставка</h3>
+            <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
             <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p></li>
           <li>Гарантия
-            <h3 class="h3-big">Гарантия</h3>
+            <h3>Гарантия</h3>
             <p>Текст</p></li>
           <li>Кредит
-            <h3 class="h3-big">Кредит</h3>
+            <h3>Кредит</h3>
             <p>Текст</p></li>
-        </ul>          
+        </ul>
       </section>
 
       <article>
@@ -157,21 +160,40 @@
               <li class="transportation-item">ЖелДорЭкспедиция</li>
             </ul>
           <a href="company.html" class="button">Подробнее о компании</a>
-      
+
         <h2 class="main-contacts">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис</p>
-          <img src="img/map.png" width="300px" height="158px">
-          <!--Здесь будет карта-->
-          <form><!--Здесь будет форма-->
-          <input type="button" value="Заблудились? Напишите нам!" class="button">
-          </form>
+            <div class="image-wrapper">
+              <img src="img/map.png" width="300px" height="158px" alt="Адрес офиса">
+            </div>
+
+        <a href="#" class="button">Заблудились? Напишите нам!</a>
+          <div class="modal-content">
+            <div class="modal-close"><div>
+              <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="half-width">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+                </div>
+
+                <div class="half-width">
+                  <label for="email">Ваш e-mail</label>
+                  <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <label for="your-text">Текст письма</label>
+                <textarea type="text" id="your-text" rows="5" placeholder="В свободной форме"></textarea>
+
+                <p><button class="button" type="submit">Отправить</button></p>
+              </form>
+            </div>
       </article>
     </main>
 
       <footer class="main-footer">
           <nav class="site-navigation-footer">
-            <img src="img/logo-footer.jpg" width="220px" height="68px" alt="">
-            <ul class="site-navigation">    
+            <img src="img/logo-footer.jpg" width="220px" height="68px" alt="Логотип Техномарт">
+            <ul class="site-navigation">
               <li><a href="company.html">Компания</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="catalog.html">Каталог</a></li>
@@ -179,13 +201,13 @@
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
-                
+
           <nav class="site-navigation-footer">
               <address>
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  <p class="main-footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </address>
-    
-              <a href="tel:+78125550555" class="phone-footer">
+
+              <a href="tel:+78125550555" class="phone-footer" aria-label="Телефон в Петербурге">
                   +7 (812) 555-05-55
               </a>
               <ul class="site-navigation">
@@ -194,25 +216,26 @@
                 <li><a href="tools.html">Инструмент</a></li>
                 <li><a href="offers.html">Спецпредложения</a></li>
               </ul>
-          </nav>        
+          </nav>
 
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="vk.com">Вконтакте</a></li>
-            <li><a class="social-button" href="facebook.com">Фэйсбук</a></li>
-            <li><a class="social-button" href="instagram.com">Инстаграм</a></li>
+            <li><a class="social-button" href="vk.com" aria-label="Наша группа Вконтакте"></a></li>
+            <li><a class="social-button" href="facebook.com" aria-label="Наша группа на Фэйсбуке"></a></li>
+            <li><a class="social-button" href="instagram.com" aria-label="Наша страница в Инстаграме"></a></li>
           </ul>
         </div>
 
         <p class="footer-copyright">
           Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        
+
         <p class="footer-copyright">
-          Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
 
-        
+
       </footer>
   </body>
 </html>
+>

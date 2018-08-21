@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="img/logo-header.jpg" width="220px" height="51px" alt="" class="logo-header"><a href="index.html"></a>
+      <a href="index.html"><img src="img/logo-header.jpg" width="220px" height="51px" alt="Логотип Техномарт" class="logo-header"></a>
       <form>
         <input type="search" placeholder="Поиск">
       </form>
@@ -33,7 +33,7 @@
       </a>
 
       <address>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="main-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
 
       <ul class="user-navigation">
@@ -66,20 +66,85 @@
             <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
 
+        <div class="modal-content">
+          <div class="modal-close"><div>
+            <p class="modal-title">Товар добавлен в корзину!</p>
+            <a href="#" class="button">Оформить заказ</a>
+            <a href="#" class="button">Продолжить покупки</a>
+        </div>
+
         <h2 class="catalog-title">Перфораторы</h2>
 
         <section class="filters">
             <h2 class="filters-title">Фильтр:</h2>
-                <!--Место для фильтров-->
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                      <legend>Цена:</legend>
+                        <div class="range">
+                          <div class="range-min"><button type="button"></button></div>
+                          <div class="range-max"><button type="button"></button></div>
+                        </div>
+                    <input type="text" name="min-price" id="min-price" value="0"> -
+                      <input type="text" name="max-price" id="max-price" value="30000">
+
+
+                  </fieldset>
+
+                  <fieldset>
+                      <legend>Производители:</legend>
+                        <ul>
+                          <li class="filter-option">
+                            <input type="checkbox" class="filter-checkbox" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">Bosch</label>
+                          </li>
+
+                          <li class="filter-option">
+                            <input type="checkbox" class="filter-checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">Интерскол</label>
+                          </li>
+
+                          <li class="filter-option">
+                            <input type="checkbox" class="filter-checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">Makita</label>
+                          </li>
+
+                          <li class="filter-option">
+                            <input type="checkbox" class="filter-checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">DeWalt</label>
+                          </li>
+
+                          <li class="filter-option">
+                            <input type="checkbox" class="filter-checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">Hitachi</label>
+                          </li>
+                        </ul>
+                  </fieldset>
+
+                  <fieldset>
+                      <legend>Питание</legend>
+                        <ul>
+                          <li class="filter-option">
+                            <input type="radio" class="filter-radio" name="power" value="wireless" id="filter-wireless" checked>
+                            <label for="filter-wireless">Аккумуляторные</label>
+                          </li>
+
+                          <li class="filter-option">
+                            <input type="radio" class="filter-radio" name="power" value="wire-tool" id="filter-wire-tool">
+                            <label for="filter-wire-tool">Сетевые</label>
+                          </li>
+                  </fieldset>
+
+                  <button type="submit" class="filter-button">Показать</button>
+                </form>
         </section>
 
-        <ul class="sorting">
+        <ul class="sorting"><!--Изменила код sorting-list-up и sorting-list-down-->
             <li class="sorting-title">Сортировка:</li>
             <li><a href="#" class="sorting-list-current">По цене</a></li>
             <li><a href="#" class="sorting-list">По типу</a></li>
             <li><a href="#" class="sorting-list">По функционалу</a></li>
-            <li><a href="#" class="sorting-list-up"><img src="#" width="10" height="10" alt="По возрастанию"></a></li>
-            <li><a href="#" class="sorting-list-down"><img src="#" width="10" height="10" alt="По убыванию"></a></li>
+            <li><a href="#" class="sorting-list-up" aria-label="По возрастанию"></a></li>
+            <li><a href="#" class="sorting-list-down" aria-label="По убыванию"></a></li>
         </ul>
 
 
@@ -108,15 +173,23 @@
                         <b>15 500 Р.</b>
                     </li>
 
-
                     <li class="catalog-item"><h3><a href="#">Перфоратор Bosch BFG 6000</a></h3>
                         <p><img src="img/bosch-bfg-6000.jpg" width="127px" height="112px" alt="Перфоратор Bosch BFG 6000"></p>
                         <b>25 500 Р.</b>
                     </li>
 
-                    <li class="catalog-item"><h3><a href="#">Перфоратор Bosch BFG 2000</a></h3>
+                    <li class="catalog-item">
+
+                      <div>
                         <p><img src="img/bosch-bfg-2000.jpg" width="127px" height="112px" alt="Перфоратор Bosch BFG 2000"></p>
+                        <a href="#" class="catalog-item-button">Купить</a>
+                        <a href="#" class="catalog-item-button">В закладки</a>
+                      </div>
+
+                      <div>
+                        <h3><a href="#">Перфоратор Bosch BFG 2000</a></h3>
                         <b>12 500 Р.</b>
+                      </div>
                     </li>
 
                     <li class="catalog-item"><h3><a href="#">Перфоратор Bosch BFG 3000</a></h3>
@@ -150,12 +223,13 @@
                     </li>
                 </ul>
 
-                <ul class="pagination-list">
-                    <li class="pagination-item pagination-item-current"><a>1</a></li>
-                    <li class="pagination-item"><a href="#">2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">Следующая</a></li>
-                </ul>
+                <ol class="pagination-list">
+                    <li class="pagination-item pagination-item-current"><a aria-label="Страница 1">1</a></li>
+                    <li class="pagination-item"><a href="#" aria-label="Страница 2">2</a></li>
+                    <li class="pagination-item"><a href="#" aria-label="Страница 3">3</a></li>
+                </ol>
+                    <span class="pagination-item"><a href="#" aria-label="Следующая страница">Следующая</a></span>
+
         </section>
 
 
@@ -174,7 +248,7 @@
 
 
     <footer class="main-footer">
-        <img src="img/logo-footer.jpg" width="220px" height="68px" alt="" class="logo-footer">
+        <img src="img/logo-footer.jpg" width="220px" height="68px" alt="Логотип Техномарт" class="logo-footer">
             <nav class="main-footer-site-navigation">
                 <ul>
                   <li><a href="company.html">Компания</a></li>
@@ -185,24 +259,23 @@
                 </ul>
               </nav>
 
-               <h2 class="visually-hidden">Адрес</h2>
-                  <p class="main-footer-adress">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                  </p>
+            <nav class="site-navigation-footer">
+              <address>
+                <p class="main-footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              </address>
 
-                  <a href="tel:+78125550555" class="phone-footer">
-                      +7 (812) 555-05-55
-                </a>
-                    <nav>
-                      <ul>
-                        <li><a href="articles.html">Материалы</a></li>
-                        <li><a href="technics.html">Техника</a></li>
-                        <li><a href="tools.html">Инструмент</a></li>
-                        <li><a href="offers.html">Спецпредложения</a></li>
-                      </ul>
-                    </nav>
+              <a href="tel:+78125550555" class="phone-footer" aria-label="Телефон в Петербурге">
+                  +7 (812) 555-05-55
+              </a>
 
-
+            <nav>
+              <ul>
+                <li><a href="articles.html">Материалы</a></li>
+                <li><a href="technics.html">Техника</a></li>
+                <li><a href="tools.html">Инструмент</a></li>
+                <li><a href="offers.html">Спецпредложения</a></li>
+              </ul>
+            </nav>
 
 
             <nav class="main-footer-site-navigation-2">
@@ -215,13 +288,12 @@
             </nav>
 
 
-
             <div class="footer-social">
-              <ul>
-                <li><a href="https://vk.com/htmlacademy" alt="Вконтакте"><img class="social-button" src="img/icon-vk.svg" alt="Вконтакте"></a></li>
-                <li><a href="https://facebook.com/htmlacademy/" alt="Фэйсбук"><img class="social-button" src="img/icon-fb.svg" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/htmlacademy/" alt="Инстаграм"><img class="social-button" src="img/icon-insta.svg"></a></li>
-              </ul>
+                <ul>
+                  <li><a class="social-button" href="vk.com" aria-label="Наша группа Вконтакте"></a></li>
+                  <li><a class="social-button" href="facebook.com" aria-label="Наша группа на Фэйсбуке"></a></li>
+                  <li><a class="social-button" href="instagram.com" aria-label="Наша страница в Инстаграме"></a></li>
+                </ul>
             </div>
 
             <p class="footer-copyright">
@@ -229,8 +301,7 @@
             </p>
 
             <p class="footer-copyright">
-              Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
-
 
     </footer>
