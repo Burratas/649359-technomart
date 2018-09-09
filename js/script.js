@@ -3,6 +3,10 @@ var popup = document.querySelector(".modal-write-us");
 var close = document.querySelector(".modal-close");
 var overlay = document.querySelector(".overlay");
 
+var link = document.querySelector(".buy");
+var popup = document.querySelector(".modal-cart");
+
+
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();

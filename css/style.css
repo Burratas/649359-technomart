@@ -217,15 +217,15 @@ input[type="radio"] {
   background-color: #293449;
 }
 
-.buy {
+.place-order {
   background-color: #63a63e;
 }
 
-.buy:hover {
+.place-order:hover {
   background-color: #5fbb2d;
 }
 
-.buy:active {
+.place-order:active {
   background-color: #518534;
   color: #a8c29a;
 }
@@ -2018,7 +2018,8 @@ input[type="radio"]:checked+span::before {
     inset 0px 7px 0px #ee3643;
 }
 
-.modal-write-us.is-show {
+.modal-write-us.is-show,
+.modal-cart.is-show {
   left: 50%;
   opacity: 1;
   visibility: visible;
