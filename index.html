@@ -15,7 +15,7 @@
     <div class="header-top">
       <div class="container">
         <div class="header-top-inner">
-          <a href="index.html" class="logo-header" aria-label="Логотип компании Техномарт">Техномарт</a>
+          <a class="logo-header" aria-label="Логотип компании Техномарт">Техномарт</a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
             <label for="search-input" class="visually-hidden">Поиск</label>
             <input type="search" id="search-input" placeholder="Поиск:" class="search-text">
@@ -128,6 +128,7 @@
 
           <div class="banners-box">
             <div class="slider">
+
               <input type="radio" name="point" id="btn-1" checked>
               <input type="radio" name="point" id="btn-2">
 
@@ -135,7 +136,9 @@
                 <div class="slider-controls">
                   <label for="btn-1"></label>
                   <label for="btn-2"></label>
+
                 </div>
+
                 <div class="slider-slides">
                   <div class="slide slide-1">
                     <p>Дрели</p>
@@ -171,7 +174,7 @@
       </div>
     </section>
 
-    <section class="items">
+    <section>
       <div class="container">
         <div class="subtitle">
           <h2 class="subhead">Популярные товары:</h2>
@@ -272,8 +275,8 @@
       <div class="container">
         <div class="services-box">
           <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
           <input type="radio" name="tabs" id="tab-1" checked>
           <input type="radio" name="tabs" id="tab-2">
@@ -292,25 +295,25 @@
               <section class="tab-wrap delivery" id="tabs-1">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
+                  к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!</p>
               </section>
 
               <section class="tab-wrap garantee" id="tabs-2">
                 <h3>Гарантия</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!</p>
+                <p>Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгаранием,
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                  сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.</p>
               </section>
 
               <section class="tab-wrap credit" id="tabs-3">
                 <h3>Кредит</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!</p>
+                <p>Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.</p>
+                <a href="#" class="button">Оставить заявку</a>
               </section>
             </div>
           </div>
@@ -339,11 +342,10 @@
             <h2>Контакты</h2>
             <p class="servisec-text">Вы можете забрать товар сами, заехав в наш офис</p>
             <div class="map">
-            <a><img src="/img/map.png" width="300" height="158" alt="Адрес офиса в Петербурге: ул. Б. Конюшенная, д. 19/8"></a>
+              <a class="map-link"><img src="/img/map.png" width="300" height="158" alt="Адрес офиса в Петербурге: ул. Б. Конюшенная, д. 19/8"></a>
             </div>
             <a href="form.html" class="button-link">Заблудились? Напишите нам!</a>
           </div>
-
 
     </article>
   </main>
@@ -352,7 +354,7 @@
     <div class="main-footer-top">
       <div class="container">
         <nav class="site-navigation-footer-top">
-          <a class="logo-footer" href="index.html" aria-label="Логотип компании Техномарт">Техномарт</a>
+          <a class="logo-footer" aria-label="Логотип компании Техномарт">Техномарт</a>
           <ul class="site-navigation-list-top">
             <li class="site-navigation-top-item">
               <a href="company.html">Компания</a>
@@ -442,11 +444,9 @@
     </div>
   </footer>
 
-  <div class="overlay"></div>
-
-  <div class="modal modal-write-us">
-    <button type="button" class="modal-close">Закрыть</button>
-    <p>
+  <div class="overlay">
+    <div class="modal modal-write-us">
+      <button type="button" class="modal-close">Закрыть</button>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
 
         <label for="name" class="modal-item">Ваше имя:</label>
@@ -463,6 +463,16 @@
           <button class="button" type="submit">Отправить</button>
         </p>
       </form>
+    </div>
+  </div>
+
+
+  <div class="overlay"></div>
+  <div class="modal modal-map">
+    <button type="button" class="modal-close">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22607.663848233355!2d30.319081918320876!3d59.94451923932073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536491785083"
+      width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   </div>
 
   <script src="js/script.js"></script>
