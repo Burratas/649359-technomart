@@ -417,6 +417,8 @@ input[type='radio'] {
   min-width: 195px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
   background-color: #ee3643;
   font-family: 'Cuprum', Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -1162,6 +1164,8 @@ input[type='radio'] {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button-middle:hover {
